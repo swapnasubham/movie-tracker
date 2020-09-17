@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Track</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Movie Track</h1>
+    <p>&#9824; Created By Swapnasubham Das &#9824;</p>
+    <div class="drag-container">
+        <ul class="drag-list">
+            <!-- Open Column -->
+            <li class="drag-column open-column">
+                <span class="header">
+                    <h1>Movie</h1>
+                </span>
+                <!-- open content -->
+                <div id="open-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="open-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(0)">
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(0)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(0)">
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true"></div>
+                </div>
+                
+            </li>
+
+            <!-- 2nd In Progress Column -->
+            <li class="drag-column in-progress-column">
+                <span class="header">
+                    <h1>TV Series</h1>
+                </span>
+                <!-- in-progress content -->
+                <div id="in-progress-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="in-progress-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(1)">
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(1)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(1)">
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true"></div>
+                </div>
+                
+            </li>
+
+            <!-- 3rd Pending Column -->
+            <li class="drag-column pending-column">
+                <span class="header">
+                    <h1>Watching</h1>
+                </span>
+                <!-- pending content -->
+                <div id="pending-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="pending-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(2)">
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(2)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(2)">
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true"></div>
+                </div>
+                
+            </li>
+
+            <!-- 4th Resolved Column -->
+            <li class="drag-column resolved-column">
+                <span class="header">
+                    <h1>Watched</h1>
+                </span>
+                <!-- resolved content -->
+                <div id="resolved-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="resolved-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(3)">
+                    </ul>
+                </div>
+                <!-- Add Button Group -->
+                <div class="add-btn-group">
+                    <div class="add-btn" onclick="showInputBox(3)">
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div class="add-btn solid" onclick="hideInputBox(3)"> 
+                        <span>Save Item</span>
+                    </div>
+                </div>
+                <div class="add-container">
+                    <div class="add-item" contenteditable="true"></div>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
